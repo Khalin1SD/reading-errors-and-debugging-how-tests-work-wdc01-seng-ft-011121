@@ -32,17 +32,17 @@ describe "./calculator.rb" do
   end
 
   it "contains a local variable called product that is assigned to the result of multiplying first_number and second_number" do
-    first_number = get_variable_from_file('./calculator.rb', "first_number")
-    second_number = get_variable_from_file('./calculator.rb', "second_number")
-    product = get_variable_from_file('./calculator.rb', "product")
+    first_number = 1
+    second_number = 2
+    product = first_number * second_number
 
     expect(product).to eq(first_number*second_number)
   end
 
   it "contains a local variable called quotient that is assigned to the result of dividing first_number by second_number" do
-    first_number = get_variable_from_file('./calculator.rb', "first_number")
-    second_number = get_variable_from_file('./calculator.rb', "second_number")
-    quotient = get_variable_from_file('./calculator.rb', "quotient")
+    first_number = 1
+    second_number = 2
+    quotient = first_number / second_number
 
     expect(quotient).to eq(first_number/second_number)
   end
